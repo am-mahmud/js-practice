@@ -16,6 +16,7 @@ let personWeight = 78;
 let personHeight = 1.80;
 let personBMI = personWeight/ (personHeight * personHeight);
 
+personBMI = personBMI.toFixed(2);
 
 if (personBMI < 18.5){
     console.log("You are underwight");
