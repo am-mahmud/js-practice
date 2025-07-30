@@ -8,14 +8,19 @@ Ticket fare Calculator
 */
 
 let busTicket = 800;
-let age = 0;
+let age = 20;
+let isStudent = true; // set true if student, false otherwise
 
-if (age < 10){
+if (age < 10) {
     console.log("Bus ticket is free");
-}else if(age >=60){
+} else if (isStudent) {
+    const discount = busTicket * 50 / 100;
+    const payAmount = busTicket - discount;
+    console.log("You are a student. Pay:", payAmount, "Tk");
+} else if (age >= 60) {
     const discount = busTicket * 15 / 100;
     const payAmount = busTicket - discount;
-    console.log("You need to pay", payAmount);
-}else{
-    console.log('Pay the regular fee 800Tk')
+    console.log("Senior citizen discount applied. Pay:", payAmount, "Tk");
+} else {
+    console.log("Pay the regular fee:", busTicket, "Tk");
 }
