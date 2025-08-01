@@ -17,7 +17,7 @@ if (examMark > 80){
     if(friendMark < 80 && friendMark >= 60){
         console.log("Good Luck Next Time")
     }else if(friendMark < 60 && friendMark >= 40 ){
-        console.log("I will not see you text")
+        console.log("I will not see your text")
     }else if(friendMark < 40){
         console.log("Block them")
     }
